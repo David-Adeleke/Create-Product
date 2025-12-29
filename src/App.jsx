@@ -20,11 +20,11 @@ function App() {
     }
 
     if (form.price === '' || Number(form.price) < 0) {
-      errs.price = 'Price must be 0 or more';
+      errs.price = 'Price must be greater than 0';
     }
 
     if (form.quantity !== '' && Number(form.quantity) < 0) {
-      errs.quantity = 'Quantity must be 0 or more';
+      errs.quantity = 'Quantity must be greater than 0';
     }
 
     return errs;
