@@ -16,7 +16,7 @@ function App() {
     const errs = {};
 
     if (!form.name || form.name.trim().length < 1) {
-      errs.name = 'Name is required (min 1 character)';
+      errs.name = 'Name is required';
     }
 
     if (form.price === '' || Number(form.price) < 0) {
